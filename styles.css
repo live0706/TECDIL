@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style du header */
+header {
+    background-color: #007bff; /* Bleu foncé Bootstrap */
+    color: white;
+    padding: 40px 0; /* Augmenter la taille du header */
+    text-align: center;
+    position: relative;
+}
+
+/* Style du logo */
+header img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 110px; /* Agrandir le logo */
+}
+.center-slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #17a2b8; /* Bleu turquoise Bootstrap */
+    color: white; /* Couleur du texte */
+}
+.center-slogan p {
+    transition: color 0.3s, font-size 0.3s;
+}
+.center-slogan p:hover {
+    color: white; /* Change to your desired color */
+    font-size: 4.2em; /* Adjust the size as needed */
+}
+/* Style du menu de navigation */
+nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10px; /* Déplacer le menu à droite */
+    top: 50%; /* Centrer verticalement le menu */
+    transform: translateY(-50%); /* Ajuster le centrage vertical */
+}
+
+/* Style des éléments de la liste du menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style des éléments de la liste */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: transform 0.3s; /* Ajouter une transition pour l'effet d'agrandissement */
+}
+
+/* Effet d'agrandissement lors du survol */
+nav ul li:hover {
+    transform: scale(1.2); /* Agrandir l'élément du menu lors du survol */
+}
+
+/* Style des liens du menu */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* Agrandir le texte du menu */
+}
+
+/* Souligner le lien actif */
+nav ul li a:hover, nav ul li a:focus {
+    text-decoration: underline; /* Souligner le lien lorsqu'on est dessus */
+    color: white; /* Change to your desired color */
+    font-size: 1.5em; /* Adjust the size as needed */
+}
+
+
+/* Style du slogan */
+.slogan {
+    color: white;
+    font-size: 2.2em;
+    margin-top: 5px;
+    opacity: 0; /* Masquer le slogan initialement */
+    transition: opacity 2s ease-in-out; /* Ajouter une transition pour l'affichage */
+}
+
+/* Style de l'élément amusant */
+.fun-element {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style du conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Permet au conteneur de prendre tout l'espace disponible */
+}
+
+/* Style des sections */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #007bff; /* Bleu foncé Bootstrap */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Style des services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    background-color: #b2ebf2;
+}
+
+.service h3 {
+    color: #00796b;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1em;
+    color: #004d40;
+}
+
+/* Style du footer */
+footer {
+    background-color: #007bff; /* Bleu foncé Bootstrap */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container p {
+    margin: 10px 0; /* Ajouter de l'espace entre les paragraphes */
+    font-size: 1em;
+}
+
+.social-media {
+    margin-top: 20px; /* Ajouter de l'espace au-dessus des icônes de réseaux sociaux */
+}
+
+.social-media a {
+    margin: 0 15px; /* Ajouter de l'espace entre les icônes */
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+/* Style du formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff; /* Bleu foncé Bootstrap */
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Bleu foncé Bootstrap */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style du menu hamburger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 1100px) {
+    nav ul {
+        display: none; /* Masquer le menu par défaut */
+        flex-direction: column;
+        position: absolute;
+        background-color: #007bff; /* Bleu foncé Bootstrap */
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex; /* Afficher le menu lorsqu'il a la classe 'show' */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex; /* Afficher le menu hamburger */
+    }
+    .center-slogan p:hover {
+        color: white; /* Change to your desired color */
+        font-size: 1.4em; /* Adjust the size as needed */
+    }
+}
